@@ -126,13 +126,12 @@ public class MiniPro {
 
     public static void writeStudentInfoToFile(String fileName) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName))) {
-            // Sample student data to write (modify as needed)
             String studentData = "Kishore,101,90\n" +
                     "Vamshi,102,65\n";
 
             bufferedWriter.write(studentData);
         } catch (IOException e) {
-            e.printStackTrace(); // Handle or log the exception as needed
+            e.printStackTrace(); 
         }
     }
 
