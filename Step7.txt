@@ -1,3 +1,4 @@
+// We can add these 2 methods in the main function for step 7 
 public class MiniPro {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
