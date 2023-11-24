@@ -1,0 +1,5 @@
+Nandu,1,95
+Kishan,2,60
+Charan,3,75
+Karthik,4,85
+Harika,5,70

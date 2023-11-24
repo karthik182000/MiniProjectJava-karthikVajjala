@@ -1,0 +1,49 @@
+public class MiniPro {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("Menu:");
+            System.out.println("1. Enter Student Details");
+            System.out.println("2. Display Student Information");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+            
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    enterStudentDetails(sc);
+                    break;
+                case 2:
+                    readAndDisplayStudentsFromFile("C:\\Users\\ASUS\\IdeaProjects\\kar_java\\input_student_data.txt");
+                    break;
+                case 3:
+                    System.out.println("Exiting the program.");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter a valid option.");
+                    break;
+            }
+        } while (choice != 3);
+
+        sc.close();
+    }
+
+    public static void enterStudentDetails(Scanner sc) {
+        System.out.println("Enter Student Details:");
+        System.out.print("Name: ");
+        String name = sc.next();
+        
+        System.out.print("Roll Number: ");
+        int rollNumber = sc.nextInt();
+        
+        System.out.print("Marks: ");
+        int marks = sc.nextInt();
+
+        // Create a Student or GraduateStudent instance based on my calculations 
+        // For example:
+        Student student = new Student(name, rollNumber, marks);
+        student.displayStudentInfo();
+    }
