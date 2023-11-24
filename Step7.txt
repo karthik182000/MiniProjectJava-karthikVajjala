@@ -1,4 +1,4 @@
-// We can add these 2 methods in the main function for step 7 
+// We can add this in the main function for step 7 we can do either ways or we can combine using a switch statement as below if we want to take input from the file we can take / we can take input from user as shown 
 public class MiniPro {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -43,8 +43,6 @@ public class MiniPro {
         System.out.print("Marks: ");
         int marks = sc.nextInt();
 
-        // Create a Student or GraduateStudent instance based on my calculations 
-        // For example:
         Student student = new Student(name, rollNumber, marks);
         student.displayStudentInfo();
     }
